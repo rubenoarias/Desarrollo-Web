@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    
+    color: rgba(255, 0, 8, 0.632);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    /*text-shadow: 1px 2px 2px #1C6EA4;*/
+}
+.parpadeo{
+    animation: parpadeoText 1.2s infinite;
+}
+@keyframes parpadeoText{
+    0%{     color: rgb(6, 37, 56);    }
+    49%{    color: rgb(67, 31, 195); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(189, 162, 229);    }
+}
+h1{
+    font-weight: bold;
+    text-align:center;
+    
+
+}
+header {
+    background-color: cadetblue;
+    border: 30px solid blue;
+    margin: 20px 25px 15px 30px;
+    padding: 10px 15px 20px 15px;
+    font-size: 20px;
+    /*Logo del lado izquierdo del titulo de la pagina*/
+    background: #D0E4F5 url("https://htmlcheatsheet.com/images/logo-css.png") no-repeat scroll 0 0;
+}
+nav ul{
+    /* barra de navegación horizontal básica con un color de fondo oscuro y cambie el color de fondo de los enlaces cuando el usuario mueva el mouse sobre ellos*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 20px;
+    /*parte superior fija
+    position: fixed;
+    bottom: 0px;
+    width: 100%;*/
+}
+/*Usa flotar para hacer que los elementos de bloque floten uno al lado del otro*/
+li{
+    float: left;
+}
+li a{
+    /*display: block;- Nos permite especificar relleno (y alto, ancho, márgenes, etc.)*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;/*algo de relleno entre cada elemento <a>, para que se vean bien*/
+    text-decoration: none;
+
+}
+/*cambia el color de fondo de los enlaces cuando el usuario mueva el mouse sobre ellos*/
+li a:hover {
+    background-color: #111;
+  }
+/*clase "activa" al enlace actual para que el usuario sepa en qué página se encuentra*/
+.activa{
+    background-color: #04AA6D;
+}
+section 
+    {
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+        float: left;
+        width: 40%;
+      }
+aside{
+       
+        width: 420px;;
+        height: 600px;
+        border: 15px solid rgb(92, 19, 65);
+        padding: 50px;
+        margin: 20px;
+        float: right;
+        width: 30%;
+        
+}
+.propaganda{
+        display: inline;
+        font-size: 35px;
+        color: #04AA6D;
+        text-decoration: none;
+        text-align: center;
+        padding: 30px 32px;
+        
+}
+h3{
+    font-size: 20px;
+    text-align: justify;
+}
+footer{
+    position:absolute;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 60px;
+    width: 100%;
+}
